@@ -25,10 +25,10 @@ cd hiveginator && chmod +x hiveginator.py
 ```bash
 ./hiveginator.py --login
 ```
+Вам будет предложено сохранить сессионную cookie для дальнейшей работы 
+
 ```bash
 ./hiveginator --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl
 ```
-
-Вам будет предложено сохранить сессионную cookie для дальнейшей работы 
 если не указан аргумент:
 ```--projectid``` будет предложен выбор проекта для загрузки
