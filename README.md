@@ -21,7 +21,11 @@ git clone https://github.com/scboln/hiveginator.git
 
 ```bash
 cd hiveginator && chmod +x hiveginator.py
+```
+```bash
 ./hiveginator.py --login
+```
+```bash
 ./hiveginator --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl
 ```
 
