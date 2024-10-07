@@ -10,13 +10,17 @@ gowitness scan file -f hosts.txt --write-db --write-jsonl
 ```
 Выполнение этой команды создаст скриншоты, sqlite базу данных и jsonl файл результатов с именем gowitness.jsonl
 Если хостов в проекте не существует, будут созданы только hostname без ip адреса 
-
+----
 Но вы можете предварительно воспользоваться следующей конструкцией на примере subfinder вместе с dnsx:
 ```
 subfinder -d example.com -silent | dnsx -resp -silent -nc | awk '{print $3":"$1}' | sed 's/\[\(.*\)\]/\1/g'
 ```
-Далее загрузить полученный результат в Hive через меню проекта "Scan - Import - Parse data"
+Пример полученных данных:
+1.1.1.1:example.com
+2.2.2.2:second.example.com
 
+Далее загрузить полученный результат в Hive через меню проекта "Scan - Import - Parse data"
+----
 
 #### Запуск hiveginator.py
 
