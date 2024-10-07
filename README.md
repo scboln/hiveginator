@@ -15,9 +15,9 @@ gowitness scan file -f hosts.txt --write-db --write-jsonl
 ```
 subfinder -d example.com -silent | dnsx -resp -silent -nc | awk '{print $3":"$1}' | sed 's/\[\(.*\)\]/\1/g'
 ```
-Пример полученных данных:
-1.1.1.1:example.com
-2.2.2.2:second.example.com
+Пример полученных данных:  
+1.1.1.1:example.com  
+2.2.2.2:second.example.com   
 
 Далее загрузить полученный результат в Hive через меню проекта "Scan - Import - Parse data"
 
