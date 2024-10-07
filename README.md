@@ -27,11 +27,11 @@ cd hiveginator && chmod +x hiveginator.py
 ./hiveginator.py --login
 ```
 ```bash
-./hiveginator --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl
+./hiveginator.py --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl
 ```
 Запуск без сохранения сессионной Cookie
 ```bash
-./hiveginator --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl --login
+./hiveginator.py --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl --login
 ```
 
 если не указан аргумент:
