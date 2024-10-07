@@ -22,13 +22,17 @@ git clone https://github.com/scboln/hiveginator.git
 ```bash
 cd hiveginator && chmod +x hiveginator.py
 ```
+Запуск с предварительным логином и сохранением сессионной Cookie
 ```bash
 ./hiveginator.py --login
 ```
-Вам будет предложено сохранить сессионную cookie для дальнейшей работы 
-
 ```bash
 ./hiveginator --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl
 ```
+Запуск без сохранения сессионной Cookie
+```bash
+./hiveginator --hive http://hive_ip --screenshots ../gowitness/screenshots --jsonl ../gowitness/gowitness.jsonl --login
+```
+
 если не указан аргумент:
 ```--projectid``` будет предложен выбор проекта для загрузки
